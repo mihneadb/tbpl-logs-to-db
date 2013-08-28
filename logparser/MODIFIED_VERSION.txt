@@ -1,0 +1,1 @@
+This is a modified version. The original code lives at http://hg.mozilla.org/automation/logparser/.

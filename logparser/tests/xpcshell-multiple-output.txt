@@ -1,0 +1,55 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": "1302900853", 
+      "buildid": "20110415134453", 
+      "suitename": "xpcshell", 
+      "elapsedtime": "1061", 
+      "cmdline": "bash -c 'if [ ! -d firefox/plugins ]; then mkdir firefox/plugins; fi && cp bin/xpcshell firefox && cp -R bin/components/* firefox/components/ && cp -R bin/plugins/* firefox/plugins/ && python -u xpcshell/runxpcshelltests.py", 
+      "platform": "linux64", 
+      "date": "2011-04-15", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": "mozilla-central_fedora64_test-xpcshell", 
+      "tree": "mozilla-central", 
+      "machine": "talos-r3-fed64-047", 
+      "failed": "1", 
+      "passed": "1146", 
+      "failures": [
+        {
+          "test": "xpcshell/tests/netwerk/test/unit/test_socks.js", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "test failed (with xpcshell return code: 0), see following log:"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "exception thrown from do_timeout callback: [Exception... \"Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIProcess.kill]\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: /home/cltbld/talos-slave/test/build/xpcshell/tests/netwerk/test/unit/test_socks.js :: <TOP_LEVEL> :: line 446\"  data: no] - See following stack:"
+            }
+          ]
+        }
+      ], 
+      "os": "fedora64", 
+      "revision": "d492992e2884"
+    }
+  ], 
+  "testgroup": "xpcshell", 
+  "buildtype": "opt", 
+  "buildid": "20110415134453", 
+  "builder": "mozilla-central_fedora64_test-xpcshell", 
+  "tree": "mozilla-central", 
+  "tessuite_count": 1, 
+  "filename": "xpcshell-multiple.log.gz", 
+  "machine": "talos-r3-fed64-047", 
+  "platform": "linux64", 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-linux64/1302900293/firefox-6.0a1.en-US.linux-x86_64.tar.bz2", 
+  "starttime": "1302900853", 
+  "date": "2011-04-15", 
+  "frameworkfailures": null, 
+  "revision": "d492992e2884", 
+  "os": "fedora64", 
+  "id": "1302900853-c0a93aae24f5b5bf112027fa60776ea92bf075bf", 
+  "logurl": null
+}

@@ -1,0 +1,160 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100922120347", 
+      "suitename": "mochitest-chrome", 
+      "elapsedtime": "1127", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --chrome", 
+      "platform": null, 
+      "date": "2010-09-22", 
+      "todo": "113", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "win32-slave23", 
+      "failed": "0", 
+      "passed": "13974", 
+      "os": null, 
+      "revision": "51bf8308d297"
+    }, 
+    {
+      "machine": "win32-slave23", 
+      "testfailure_count": 4, 
+      "buildid": "20100922120347", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "mochitest-browser-chrome", 
+      "elapsedtime": "2633", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --browser-chrome", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-22", 
+      "failures": [
+        {
+          "test": "chrome://mochikit/content/browser/browser/components/sessionstore/test/browser/browser_480148.js", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Found a browser window after previous test timed out"
+            }
+          ]
+        }, 
+        {
+          "test": "chrome://mochikit/content/browser/browser/components/sessionstore/test/browser/browser_522545.js", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out"
+            }
+          ]
+        }, 
+        {
+          "test": "chrome://mochikit/content/browser/browser/components/sessionstore/test/browser/browser_524745.js", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "application timed out after 330 seconds with no output"
+            }
+          ]
+        }, 
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "buildbot.slave.commands.TimeoutError: command timed out: 1200 seconds without output"
+            }
+          ]
+        }
+      ], 
+      "revision": "51bf8308d297", 
+      "os": null, 
+      "logurl": null
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100922120347", 
+      "suitename": "mochitest-a11y", 
+      "elapsedtime": "268", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --a11y", 
+      "platform": null, 
+      "date": "2010-09-22", 
+      "todo": "13", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "win32-slave23", 
+      "failed": "0", 
+      "passed": "14608", 
+      "os": null, 
+      "revision": "51bf8308d297"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100922120347", 
+      "suitename": "mochitest-ipcplugins", 
+      "elapsedtime": "81", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --setpref=dom.ipc.plugins.enabled=false --test-path=modules/plugin/test", 
+      "platform": null, 
+      "date": "2010-09-22", 
+      "todo": "0", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "win32-slave23", 
+      "failed": "0", 
+      "passed": "458", 
+      "os": null, 
+      "revision": "51bf8308d297"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100922120347", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 4, 
+  "filename": "multiple-timeouts.log.gz", 
+  "machine": "win32-slave23", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1285182227/firefox-4.0b7pre.en-US.win32.zip", 
+  "starttime": null, 
+  "date": "2010-09-22", 
+  "frameworkfailures": null, 
+  "revision": "51bf8308d297", 
+  "os": null, 
+  "id": "None-741e1de9cb8cd766bb70183ea0862576aa5f1ce1", 
+  "logurl": null
+}

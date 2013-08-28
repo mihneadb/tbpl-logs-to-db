@@ -1,0 +1,53 @@
+{
+  "testsuites": [
+    {
+      "machine": "mw32-ix-slave12", 
+      "testfailure_count": 1, 
+      "buildid": "20100929065014", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "reftest", 
+      "elapsedtime": "1267", 
+      "cmdline": "python reftest/runreftest.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols reftest/tests/layout/reftests/reftest.list", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-29", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "application timed out after 60 seconds with no output"
+            }, 
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "buildbot.slave.commands.TimeoutError: command timed out: 1200 seconds without output"
+            }
+          ]
+        }
+      ], 
+      "revision": "287acb4cc03b", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100929065014", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "reftest-timeout.log.gz", 
+  "machine": "mw32-ix-slave12", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1285768214/firefox-4.0b7pre.en-US.win32.zip", 
+  "starttime": null, 
+  "date": "2010-09-29", 
+  "frameworkfailures": null, 
+  "revision": "287acb4cc03b", 
+  "os": null, 
+  "id": "None-90aa080f60551494a7caf1c974e50eb7c5287849", 
+  "logurl": null
+}

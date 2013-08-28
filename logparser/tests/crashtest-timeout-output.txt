@@ -1,0 +1,52 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100927122447", 
+      "suitename": "crashtest", 
+      "elapsedtime": "395", 
+      "cmdline": "python reftest/runreftest.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols reftest/tests/testing/crashtest/crashtests.list", 
+      "platform": null, 
+      "date": "2010-09-27", 
+      "todo": "10", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed64-031", 
+      "failed": "1", 
+      "passed": "1668", 
+      "failures": [
+        {
+          "test": "reftest/tests/modules/plugin/test/crashtests/522512-1.html", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "timed out waiting for reftest-wait to be removed (after onload fired)"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "e7958286b6e5"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100927122447", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "crashtest-timeout.log.gz", 
+  "machine": "talos-r3-fed64-031", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-linux64/1285615487/firefox-4.0b7pre.en-US.linux-x86_64.tar.bz2", 
+  "starttime": null, 
+  "date": "2010-09-27", 
+  "frameworkfailures": null, 
+  "revision": "e7958286b6e5", 
+  "os": null, 
+  "id": "None-a1b5781deabf656f594d5fa8bfea229b2af8f96c", 
+  "logurl": null
+}

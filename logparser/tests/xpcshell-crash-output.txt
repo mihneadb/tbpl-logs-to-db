@@ -1,0 +1,56 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "debug", 
+      "starttime": "1302904898", 
+      "buildid": "20110415134453", 
+      "suitename": "xpcshell", 
+      "elapsedtime": "2784", 
+      "cmdline": "bash -c if [ ! -d firefox/plugins ]; then mkdir firefox/plugins; fi && cp bin/xpcshell.exe firefox && cp -R bin/components/* firefox/components/ && cp -R bin/plugins/* firefox/plugins/ && python -u xpcshell/runxpcshelltests.py", 
+      "platform": "win32", 
+      "date": "2011-04-15", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": "mozilla-central_win7-debug_test-xpcshell", 
+      "tree": "mozilla-central", 
+      "machine": "talos-r3-w7-048", 
+      "failed": "1", 
+      "passed": "1147", 
+      "failures": [
+        {
+          "test": "xpcshell/tests/services/sync/tests/unit/test_service_detect_upgrade.js", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "test failed (with xpcshell return code: -2147483645), see following log:"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  mozalloc.dll!mozalloc_abort(char const * const) [mozalloc_abort.cpp:d492992e2884 : 77 + 0x0]\n    eip = 0x73741352   esp = 0x001ef4cc   ebp = 0x001ef4cc   ebx = 0x7ffd5000\n    esi = 0x0000c000   edi = 0x00000000   eax = 0x00000000   ecx = 0xbb6fa13e\n    edx = 0x72b01d40   efl = 0x00000206\n    Found by: given as instruction pointer in context\n 1  xul.dll!Abort [nsDebugImpl.cpp:d492992e2884 : 388 + 0x9]\n    eip = 0x685b7b9d   esp = 0x001ef4d4   ebp = 0x001ef4d8\n    Found by: call frame info\n 2  xul.dll!NS_DebugBreak_P [nsDebugImpl.cpp:d492992e2884 : 375 + 0xb]\n    eip = 0x685b7768   esp = 0x001ef4e0   ebp = 0x001ef8fc\n    Found by: call frame info\n 3  xul.dll!PL_DHashTableFinish [pldhash.c:d492992e2884 : 406 + 0x6c]\n    eip = 0x6851cfe8   esp = 0x001ef904   ebp = 0x001ef92c\n    Found by: call frame info\n 4  xul.dll!nsTHashtable<nsBaseHashtableET<nsIDHashKey,xptiInterfaceEntry *> >::~nsTHashtable<nsBaseHashtableET<nsIDHashKey,xptiInterfaceEntry *> >() [nsTHashtable.h:d492992e2884 : 318 + 0x8]\n    eip = 0x685ccc19   esp = 0x001ef934   ebp = 0x001ef93c\n    Found by: call frame info\n 5  xul.dll!nsBaseHashtable<nsIDHashKey,xptiInterfaceEntry *,xptiInterfaceEntry *>::~nsBaseHashtable<nsIDHashKey,xptiInterfaceEntry *,xptiInterfaceEntry *>() + 0xe\n    eip = 0x685ccb6f   esp = 0x001ef944   ebp = 0x001ef948\n    Found by: call frame info\n"
+            }
+          ]
+        }
+      ], 
+      "os": "win7", 
+      "revision": "d492992e2884"
+    }
+  ], 
+  "testgroup": "xpcshell", 
+  "buildtype": "debug", 
+  "buildid": "20110415134453", 
+  "builder": "mozilla-central_win7-debug_test-xpcshell", 
+  "tree": "mozilla-central", 
+  "tessuite_count": 1, 
+  "filename": "xpcshell-crash.log.gz", 
+  "machine": "talos-r3-w7-048", 
+  "platform": "win32", 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1302900293/firefox-6.0a1.en-US.win32.zip", 
+  "starttime": "1302904898", 
+  "date": "2011-04-15", 
+  "frameworkfailures": null, 
+  "revision": "d492992e2884", 
+  "os": "win7", 
+  "id": "1302904898-66571f785efe81922a9348a06425de0da3399b17", 
+  "logurl": null
+}

@@ -1,0 +1,97 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100922142712", 
+      "suitename": "mochitest-plain-4", 
+      "elapsedtime": "3339", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --total-chunks=5 --this-chunk=4 --chunk-by-dir=4", 
+      "platform": null, 
+      "date": "2010-09-22", 
+      "todo": "159", 
+      "logurl": null, 
+      "testfailure_count": 4, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed64-051", 
+      "failed": "4", 
+      "passed": "131006", 
+      "failures": [
+        {
+          "test": "/tests/layout/base/tests/test_flush_on_paint.html", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out."
+            }
+          ], 
+          "duration": "301087"
+        }, 
+        {
+          "test": "/tests/layout/base/tests/test_mozPaintCount.html", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out."
+            }
+          ], 
+          "duration": "300520"
+        }, 
+        {
+          "test": "/tests/modules/plugin/test/test_painting.html", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "partially clipped plugin painted once - got 0, expected 1"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "painted after invalidate - got 1, expected 2"
+            }
+          ], 
+          "duration": "1242"
+        }, 
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libpthread-2.11.so + 0xe88d\n    rbx = 0x59e9d8ae   r12 = 0xd7e8a600   r13 = 0x02325070   r14 = 0x00000000\n    r15 = 0x022c09a0   rip = 0xd360e88d   rsp = 0xd7e8a510   rbp = 0xd7e8a540\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libxul.so!google_breakpad::ExceptionHandler::WriteMinidump [exception_handler.cc:7bc76cad3f23 : 404 + 0x13]\n    rbx = 0x00000000   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe816ff59   rsp = 0xaa679f00   rbp = 0xaa67a550\n 1  libxul.so!google_breakpad::ExceptionHandler::WriteMinidump [exception_handler.cc:7bc76cad3f23 : 391 + 0x12]\n    rbx = 0x00000000   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe817079e   rsp = 0xaa67a560   rbp = 0xaa67a610\n 2  libxul.so!CrashReporter::CreatePairedMinidumps [nsExceptionHandler.cpp:7bc76cad3f23 : 1846 + 0x2b]\n    rbx = 0x00000000   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe8168ef8   rsp = 0xaa67a620   rbp = 0xaa67a7b0\n 3  libxul.so!mozilla::plugins::PluginModuleParent::ShouldContinueFromReplyTimeout [PluginModuleParent.cpp:7bc76cad3f23 : 242 + 0x85]\n    rbx = 0xaa67a7d0   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe954e616   rsp = 0xaa67a7c0   rbp = 0xaa67a970\n 4  libxul.so!mozilla::plugins::PPluginModuleParent::OnReplyTimeout [PPluginModuleParent.cpp : 713 + 0x15]\n    rbx = 0x10062d18   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe9571e90   rsp = 0xaa67a980   rbp = 0xaa67a990\n 5  libxul.so!mozilla::ipc::SyncChannel::ShouldContinueFromTimeout [SyncChannel.cpp:7bc76cad3f23 : 261 + 0x1e]\n    rbx = 0x10062d18   r12 = 0x891701c8   r13 = 0x00000000   r14 = 0xffffffff\n    r15 = 0x891701c8   rip = 0xe956f304   rsp = 0xaa67a9a0   rbp = 0xaa67a9d0\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libnptest.so!Crash [nptest.cpp:7bc76cad3f23 : 99 + 0x4]\n    rbx = 0xee14c8ae   r12 = 0xf1f6a550   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xee14bd94   rsp = 0xf1f6a450   rbp = 0xf1f6a450\n 1  libnptest.so!IntentionalCrash [nptest.cpp:7bc76cad3f23 : 107 + 0x4]\n    rbx = 0xee14c8ae   r12 = 0xf1f6a550   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xee151245   rsp = 0xf1f6a460   rbp = 0xf1f6a460\n 2  libnptest.so!crashPlugin [nptest.cpp:7bc76cad3f23 : 2342 + 0x4]\n    rbx = 0xee14c8ae   r12 = 0xf1f6a550   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xee151263   rsp = 0xf1f6a470   rbp = 0xf1f6a490\n 3  libnptest.so!scriptableInvoke [nptest.cpp:7bc76cad3f23 : 1623 + 0x28]\n    rbx = 0xee14c8ae   r12 = 0xf1f6a550   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xee14c9a1   rsp = 0xf1f6a4a0   rbp = 0xf1f6a500\n 4  libxul.so!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke [PluginScriptableObjectChild.cpp:7bc76cad3f23 : 710 + 0x46]\n    rbx = 0xee14c8ae   r12 = 0xf1f6a550   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xf23f21c1   rsp = 0xf1f6a510   rbp = 0xf1f6a6b0\n 5  libxul.so!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived [PPluginScriptableObjectChild.cpp : 764 + 0x3b]\n    rbx = 0x016facc8   r12 = 0x00000021   r13 = 0x016d5070   r14 = 0x00000000\n    r15 = 0x016709a0   rip = 0xf24eabc2   rsp = 0xf1f6a6c0   rbp = 0xf1f6ab80\n"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "7bc76cad3f23"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100922142712", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "crash-2.log.gz", 
+  "machine": "talos-r3-fed64-051", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-linux64-debug/1285190832/firefox-4.0b7pre.en-US.linux-x86_64.tar.bz2", 
+  "starttime": null, 
+  "date": "2010-09-22", 
+  "frameworkfailures": null, 
+  "revision": "7bc76cad3f23", 
+  "os": null, 
+  "id": "None-5dbfe220c16f881499b630d952a88e4a5d889c52", 
+  "logurl": null
+}

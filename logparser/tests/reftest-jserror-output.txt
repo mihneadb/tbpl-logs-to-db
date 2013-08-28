@@ -1,0 +1,52 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100920180849", 
+      "suitename": "reftest", 
+      "elapsedtime": "5", 
+      "cmdline": "python reftest/runreftest.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols reftest/tests/layout/reftests/reftest.list", 
+      "platform": null, 
+      "date": "2010-09-20", 
+      "todo": "0", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-leopard-049", 
+      "failed": "1", 
+      "passed": "0", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "EXCEPTION: [Exception... \"Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch2.getBoolPref]\"  nsresult: \"0x8000ffff (NS_ERROR_UNEXPECTED)\"  location: \"JS frame :: chrome://reftest/content/reftest.js :: anonymous :: line 461\"  data: no]"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "fe353b7ac4b7"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100920180849", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "reftest-jserror.log.gz", 
+  "machine": "talos-r3-leopard-049", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx/1285031329/firefox-4.0b7pre.en-US.mac.dmg", 
+  "starttime": null, 
+  "date": "2010-09-20", 
+  "frameworkfailures": null, 
+  "revision": "fe353b7ac4b7", 
+  "os": null, 
+  "id": "None-4e96ab0702b2a82181d6431df3b2aa84cb48952b", 
+  "logurl": null
+}

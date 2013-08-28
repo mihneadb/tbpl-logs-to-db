@@ -1,0 +1,53 @@
+{
+  "testsuites": [
+    {
+      "machine": "talos-r3-leopard-006", 
+      "testfailure_count": 1, 
+      "buildid": "20100928155924", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "jsreftest", 
+      "elapsedtime": "488", 
+      "cmdline": "python reftest/runreftest.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols --extra-profile-file=jsreftest/tests/user.js jsreftest/tests/jstests.list", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-28", 
+      "failures": [
+        {
+          "test": "jsreftest/tests/jsreftest.html?test=ecma_3/Array/15.4.4.3-1.js", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "application timed out after 330 seconds with no output"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)"
+            }
+          ]
+        }
+      ], 
+      "revision": "8cd9614fdddf", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100928155924", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "jsreftest-timeout-crash.log.gz", 
+  "machine": "talos-r3-leopard-006", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64/1285714764/firefox-4.0b7pre.en-US.mac64.dmg", 
+  "starttime": null, 
+  "date": "2010-09-28", 
+  "frameworkfailures": null, 
+  "revision": "8cd9614fdddf", 
+  "os": null, 
+  "id": "None-41e11e6bbe90f0e59befca44bb34d46072043f05", 
+  "logurl": null
+}

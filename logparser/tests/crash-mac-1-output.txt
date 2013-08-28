@@ -1,0 +1,125 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100923115613", 
+      "suitename": "mochitest-chrome", 
+      "elapsedtime": "693", 
+      "cmdline": "python mochitest/runtests.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --chrome", 
+      "platform": null, 
+      "date": "2010-09-23", 
+      "todo": "131", 
+      "logurl": null, 
+      "testfailure_count": 2, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-017", 
+      "failed": "2", 
+      "passed": "13886", 
+      "failures": [
+        {
+          "test": "chrome://mochikit/content/chrome/modules/plugin/test/test_crash_notify_no_report.xul", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out."
+            }
+          ], 
+          "duration": "316631"
+        }, 
+        {
+          "test": "chrome://mochikit/content/chrome/modules/plugin/test/test_crash_submit.xul", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "[SimpleTest/SimpleTest.js, window.onerror] An error occurred - ok is not defined at chrome://mochikit/content/chrome/modules/plugin/test/test_crash_notify_no_report.xul:26"
+            }
+          ], 
+          "duration": "1377"
+        }
+      ], 
+      "os": null, 
+      "revision": "d322dec4e342"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100923115613", 
+      "suitename": "mochitest-browser-chrome", 
+      "elapsedtime": "452", 
+      "cmdline": "python mochitest/runtests.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --browser-chrome", 
+      "platform": null, 
+      "date": "2010-09-23", 
+      "todo": "7", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-017", 
+      "failed": "0", 
+      "passed": "9848", 
+      "os": null, 
+      "revision": "d322dec4e342"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100923115613", 
+      "suitename": "mochitest-ipcplugins", 
+      "elapsedtime": "48", 
+      "cmdline": "python mochitest/runtests.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --setpref=dom.ipc.plugins.enabled=false --test-path=modules/plugin/test", 
+      "platform": null, 
+      "date": "2010-09-23", 
+      "todo": "0", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-017", 
+      "failed": "0", 
+      "passed": "486", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libSystem.B.dylib + 0xe82\n    rbx = 0x5fbfb410   r12 = 0x00003503   r13 = 0x00002f03   r14 = 0x03a645d0\n    r15 = 0x12141968   rip = 0x03899e82   rsp = 0x5fbfb0e8   rbp = 0x5fbfb120\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libSystem.B.dylib + 0x60e7a\n    rbx = 0x5fbfbafc   r12 = 0x00000000   r13 = 0x09e1d090   r14 = 0x5fbfbf78\n    r15 = 0x5fbfbba0   rip = 0x02e5ce7a   rsp = 0x5fbfbae8   rbp = 0x5fbfbb10\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  libnptest.dylib!crashPlugin [nptest.cpp:d322dec4e342 : 99 + 0x0]\n    rbx = 0x5fbfbbb0   r12 = 0x00000000   r13 = 0x0b024690   r14 = 0x5fbfbf88\n    r15 = 0x5fbfbbb0   rip = 0x09dd7bc9   rsp = 0x5fbfbb30   rbp = 0x09b3abd0\n 1  libnptest.dylib!scriptableInvoke [nptest.cpp:d322dec4e342 : 1623 + 0x15]\n    rbx = 0x5fbfc020   r12 = 0x00000000   r13 = 0x0b024690   r14 = 0x5fbfbf88\n    r15 = 0x5fbfbbb0   rip = 0x09dd4636   rsp = 0x5fbfbb40   rbp = 0x09b3abd0\n 2  XUL!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke [PluginScriptableObjectChild.cpp:d322dec4e342 : 710 + 0x2e]\n    rbx = 0x5fbfc020   r12 = 0x09b46220   r13 = 0x00000000   r14 = 0x5fbfbf88\n    r15 = 0x5fbfbbb0   rip = 0x00c94ba7   rsp = 0x5fbfbb70   rbp = 0x09b3abd0\n 3  XUL!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived [PPluginScriptableObjectChild.cpp : 764 + 0x24]\n    rbx = 0x5fbfc020   r12 = 0x09b46220   r13 = 0x5fbfbd80   r14 = 0x5fbfbf88\n    r15 = 0x5fbfbe10   rip = 0x00cf2792   rsp = 0x5fbfbd30   rbp = 0x09b3abd0\n 4  XUL!mozilla::plugins::PPluginModuleChild::OnCallReceived [PPluginModuleChild.cpp : 551 + 0xe]\n    rbx = 0x5fbfc020   r12 = 0x00000006   r13 = 0x5fbfbf88   r14 = 0x5fbfc020\n    r15 = 0x09b25b30   rip = 0x00ce6267   rsp = 0x5fbfbe70   rbp = 0x0a802030\n 5  XUL!mozilla::ipc::RPCChannel::DispatchIncall [RPCChannel.cpp:d322dec4e342 : 517 + 0xd]\n    rbx = 0x0b020990   r12 = 0x5fbfc020   r13 = 0x00000000   r14 = 0x5fbfc020\n    r15 = 0x09b25b30   rip = 0x00ca6209   rsp = 0x5fbfbf70   rbp = 0x0a802040\n"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "d322dec4e342"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100923115613", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 3, 
+  "filename": "crash-mac-1.log.gz", 
+  "machine": "talos-r3-snow-017", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64/1285268173/firefox-4.0b7pre.en-US.mac64.dmg", 
+  "starttime": null, 
+  "date": "2010-09-23", 
+  "frameworkfailures": null, 
+  "revision": "d322dec4e342", 
+  "os": null, 
+  "id": "None-24275c3b1892c5579e1b89f22151815d5c1e3780", 
+  "logurl": null
+}

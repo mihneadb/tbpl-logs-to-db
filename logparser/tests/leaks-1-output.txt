@@ -1,0 +1,112 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100915060928", 
+      "suitename": "mochitest-chrome", 
+      "elapsedtime": "825", 
+      "cmdline": "python mochitest/runtests.py --appname=./MinefieldDebug.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --chrome", 
+      "platform": null, 
+      "date": "2010-09-15", 
+      "todo": "132", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-014", 
+      "failed": "0", 
+      "passed": "13875", 
+      "os": null, 
+      "revision": "aaae8b035859"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100915060928", 
+      "suitename": "mochitest-browser-chrome", 
+      "elapsedtime": "1086", 
+      "cmdline": "python mochitest/runtests.py --appname=./MinefieldDebug.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --browser-chrome", 
+      "platform": null, 
+      "date": "2010-09-15", 
+      "todo": "7", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-014", 
+      "failed": "0", 
+      "passed": "9679", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 599603 bytes during test execution"
+            }, 
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 168 instances of AtomImpl with size 40 bytes each (6720 bytes total)"
+            }, 
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 1 instance of BackstagePass with size 48 bytes"
+            }, 
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 2 instances of CSSImportRuleImpl with size 88 bytes each (176 bytes total)"
+            }, 
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 46 instances of CSSImportantRule with size 32 bytes each (1472 bytes total)"
+            }, 
+            {
+              "status": "TEST-LEAKED", 
+              "text": "leaked 13 instances of CSSNameSpaceRuleImpl with size 80 bytes each (1040 bytes total)"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "aaae8b035859"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100915060928", 
+      "suitename": "mochitest-ipcplugins", 
+      "elapsedtime": "75", 
+      "cmdline": "python mochitest/runtests.py --appname=./MinefieldDebug.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --setpref=dom.ipc.plugins.enabled=false --test-path=modules/plugin/test", 
+      "platform": null, 
+      "date": "2010-09-15", 
+      "todo": "0", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-014", 
+      "failed": "0", 
+      "passed": "476", 
+      "os": null, 
+      "revision": "aaae8b035859"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100915060928", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 3, 
+  "filename": "leaks-1.log.gz", 
+  "machine": "talos-r3-snow-014", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64-debug/1284556168/firefox-4.0b7pre.en-US.mac64.dmg", 
+  "starttime": null, 
+  "date": "2010-09-15", 
+  "frameworkfailures": null, 
+  "revision": "aaae8b035859", 
+  "os": null, 
+  "id": "None-ce509ccbe63a6ad224d9a116be73200eaf5a8697", 
+  "logurl": null
+}

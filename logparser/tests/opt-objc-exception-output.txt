@@ -1,0 +1,49 @@
+{
+  "testsuites": [
+    {
+      "machine": "talos-r3-leopard-034", 
+      "testfailure_count": 1, 
+      "buildid": "20100923141503", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "mochitest-plain-5", 
+      "elapsedtime": "194", 
+      "cmdline": "python mochitest/runtests.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --total-chunks=5 --this-chunk=5 --chunk-by-dir=4", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-23", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "2010-09-23 14:48:01.300 firefox-bin[319:10b] Mozilla has caught an Obj-C exception [NSInternalInconsistencyException: -[NSNextStepFrame(0x24d98690) lockFocus] failed with window=0x24ecb390, windowNumber=796, [self isHiddenOrHasHiddenAncestor]=0]"
+            }
+          ]
+        }
+      ], 
+      "revision": "469871adcd24", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100923141503", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "opt-objc-exception.log.gz", 
+  "machine": "talos-r3-leopard-034", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx/1285276503/firefox-4.0b7pre.en-US.mac.dmg", 
+  "starttime": null, 
+  "date": "2010-09-23", 
+  "frameworkfailures": null, 
+  "revision": "469871adcd24", 
+  "os": null, 
+  "id": "None-1506415602c599874a69624ff08c1bc75a721aff", 
+  "logurl": null
+}

@@ -1,0 +1,63 @@
+{
+  "testsuites": [
+    {
+      "machine": "win32-slave22", 
+      "testfailure_count": 2, 
+      "buildid": "20100921001446", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "mochitest-plain-2", 
+      "elapsedtime": "718", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --total-chunks=5 --this-chunk=2 --chunk-by-dir=4", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-21", 
+      "failures": [
+        {
+          "test": "/tests/dom/tests/mochitest/ajax/jquery/test_jQuery.html", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Exited with code -1073741819 during test run"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  xul.dll!JS_Assert [jsutil.cpp:c9bf3375b202 : 73 + 0x0]\n    eip = 0x1158f95a   esp = 0x0012969c   ebp = 0x0012969c   ebx = 0x00000001\n    esi = 0x012e2798   edi = 0x00000000   eax = 0x00000000   ecx = 0xe8b67fc9\n    edx = 0x003a1d40   efl = 0x00010206\n    Found by: given as instruction pointer in context\n 1  xul.dll!CheckValidGCThingPtr(void *) [jsgc.cpp:c9bf3375b202 : 425 + 0x1d]\n    eip = 0x115b5e84   esp = 0x001296a4   ebp = 0x001296b4\n    Found by: call frame info\n 2  xul.dll!JSGCArenaInfo::fromGCThing(void *) [jsgc.cpp:c9bf3375b202 : 434 + 0x8]\n    eip = 0x115b5def   esp = 0x001296bc   ebp = 0x001296d0\n    Found by: call frame info\n 3  xul.dll!js_GetGCThingTraceKind(void *) [jsgc.cpp:c9bf3375b202 : 889 + 0x8]\n    eip = 0x115b5ee7   esp = 0x001296d8   ebp = 0x001296e0\n    Found by: call frame info\n 4  xul.dll!nsXPConnect::ToParticipant(void *) [nsXPConnect.cpp:c9bf3375b202 : 510 + 0x8]\n    eip = 0x1109acc2   esp = 0x001296e8   ebp = 0x001296f4\n    Found by: call frame info\n 5  xul.dll!GCGraphBuilder::NoteScriptChild(unsigned int,void *) [nsCycleCollector.cpp:c9bf3375b202 : 1643 + 0x22]\n    eip = 0x11463d36   esp = 0x001296fc   ebp = 0x00129718\n    Found by: call frame info\n"
+            }
+          ]
+        }, 
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "missing output line for total leaks!"
+            }
+          ]
+        }
+      ], 
+      "revision": "c9bf3375b202", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100921001446", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "crash-1.log.gz", 
+  "machine": "win32-slave22", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1285053286/firefox-4.0b7pre.en-US.win32.zip", 
+  "starttime": null, 
+  "date": "2010-09-21", 
+  "frameworkfailures": null, 
+  "revision": "c9bf3375b202", 
+  "os": null, 
+  "id": "None-978b228663460e09f03902fdd6105c9075aa7627", 
+  "logurl": null
+}

@@ -1,0 +1,79 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "debug", 
+      "starttime": "1302893477", 
+      "buildid": "20110415111213", 
+      "suitename": "reftest", 
+      "elapsedtime": "2428", 
+      "cmdline": "python reftest/runreftest.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols reftest/tests/layout/reftests/reftest.list", 
+      "platform": "win32", 
+      "date": "2011-04-15", 
+      "todo": "265", 
+      "logurl": null, 
+      "testfailure_count": 2, 
+      "builder": "mozilla-central_xp-debug_test-reftest", 
+      "tree": "mozilla-central", 
+      "machine": "talos-r3-xp-019", 
+      "failed": "1", 
+      "passed": "5879", 
+      "failures": [
+        {
+          "test": "reftest/tests/layout/reftests/svg/tspan-rotate-02.svg", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "image comparison (==)", 
+              "image2linenumber": 77757, 
+              "image1linenumber": 77756
+            }
+          ]
+        }, 
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  nptest.dll!Crash [nptest.cpp:ec809c159ad2 : 85 + 0x3]\n    eip = 0x049e3bce   esp = 0x0012e704   ebp = 0x0012e708   ebx = 0x00000000\n    esi = 0x046ab648   edi = 0xfdfdfdfd   eax = 0x00000000   ecx = 0xea49afc7\n    edx = 0x04a82280   efl = 0x00010212\n    Found by: given as instruction pointer in context\n 1  nptest.dll!IntentionalCrash [nptest.cpp:ec809c159ad2 : 93 + 0x4]\n    eip = 0x049e3915   esp = 0x0012e710   ebp = 0x0012e710\n    Found by: call frame info\n 2  nptest.dll!crashPlugin [nptest.cpp:ec809c159ad2 : 2556 + 0x4]\n    eip = 0x049e8478   esp = 0x0012e718   ebp = 0x0012e718\n    Found by: call frame info\n 3  nptest.dll!scriptableInvoke(NPObject *,void *,_NPVariant const *,unsigned int,_NPVariant *) [nptest.cpp:ec809c159ad2 : 1796 + 0x1b]\n    eip = 0x049e66b4   esp = 0x0012e720   ebp = 0x0012e744\n    Found by: call frame info\n 4  xul.dll!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke(mozilla::plugins::PPluginIdentifierChild *,InfallibleTArray<mozilla::plugins::Variant> const &,mozilla::plugins::Variant *,bool *) [PluginScriptableObjectChild.cpp:ec809c159ad2 : 710 + 0x39]\n    eip = 0x01b0b284   esp = 0x0012e74c   ebp = 0x0012e864\n    Found by: call frame info\n 5  xul.dll!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived(IPC::Message const &,IPC::Message * &) [PPluginScriptableObjectChild.cpp:ec809c159ad2 : 760 + 0x22]\n    eip = 0x01bee7d9   esp = 0x0012e86c   ebp = 0x0012ecd8\n    Found by: call frame info\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  nptest.dll!Crash [nptest.cpp:ec809c159ad2 : 85 + 0x3]\n    eip = 0x049e3bce   esp = 0x0012e704   ebp = 0x0012e708   ebx = 0x00000000\n    esi = 0x046abe50   edi = 0xfdfdfdfd   eax = 0x00000000   ecx = 0xea16a68c\n    edx = 0x04a82280   efl = 0x00010212\n    Found by: given as instruction pointer in context\n 1  nptest.dll!IntentionalCrash [nptest.cpp:ec809c159ad2 : 93 + 0x4]\n    eip = 0x049e3915   esp = 0x0012e710   ebp = 0x0012e710\n    Found by: call frame info\n 2  nptest.dll!crashPlugin [nptest.cpp:ec809c159ad2 : 2556 + 0x4]\n    eip = 0x049e8478   esp = 0x0012e718   ebp = 0x0012e718\n    Found by: call frame info\n 3  nptest.dll!scriptableInvoke(NPObject *,void *,_NPVariant const *,unsigned int,_NPVariant *) [nptest.cpp:ec809c159ad2 : 1796 + 0x1b]\n    eip = 0x049e66b4   esp = 0x0012e720   ebp = 0x0012e744\n    Found by: call frame info\n 4  xul.dll!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke(mozilla::plugins::PPluginIdentifierChild *,InfallibleTArray<mozilla::plugins::Variant> const &,mozilla::plugins::Variant *,bool *) [PluginScriptableObjectChild.cpp:ec809c159ad2 : 710 + 0x39]\n    eip = 0x01b0b284   esp = 0x0012e74c   ebp = 0x0012e864\n    Found by: call frame info\n 5  xul.dll!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived(IPC::Message const &,IPC::Message * &) [PPluginScriptableObjectChild.cpp:ec809c159ad2 : 760 + 0x22]\n    eip = 0x01bee7d9   esp = 0x0012e86c   ebp = 0x0012ecd8\n    Found by: call frame info\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  nptest.dll!Crash [nptest.cpp:ec809c159ad2 : 85 + 0x3]\n    eip = 0x049e3bce   esp = 0x0012e704   ebp = 0x0012e708   ebx = 0x00000000\n    esi = 0x046a88d8   edi = 0xfdfdfdfd   eax = 0x00000000   ecx = 0xea9f109a\n    edx = 0x04a82280   efl = 0x00010212\n    Found by: given as instruction pointer in context\n 1  nptest.dll!IntentionalCrash [nptest.cpp:ec809c159ad2 : 93 + 0x4]\n    eip = 0x049e3915   esp = 0x0012e710   ebp = 0x0012e710\n    Found by: call frame info\n 2  nptest.dll!crashPlugin [nptest.cpp:ec809c159ad2 : 2556 + 0x4]\n    eip = 0x049e8478   esp = 0x0012e718   ebp = 0x0012e718\n    Found by: call frame info\n 3  nptest.dll!scriptableInvoke(NPObject *,void *,_NPVariant const *,unsigned int,_NPVariant *) [nptest.cpp:ec809c159ad2 : 1796 + 0x1b]\n    eip = 0x049e66b4   esp = 0x0012e720   ebp = 0x0012e744\n    Found by: call frame info\n 4  xul.dll!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke(mozilla::plugins::PPluginIdentifierChild *,InfallibleTArray<mozilla::plugins::Variant> const &,mozilla::plugins::Variant *,bool *) [PluginScriptableObjectChild.cpp:ec809c159ad2 : 710 + 0x39]\n    eip = 0x01b0b284   esp = 0x0012e74c   ebp = 0x0012e864\n    Found by: call frame info\n 5  xul.dll!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived(IPC::Message const &,IPC::Message * &) [PPluginScriptableObjectChild.cpp:ec809c159ad2 : 760 + 0x22]\n    eip = 0x01bee7d9   esp = 0x0012e86c   ebp = 0x0012ecd8\n    Found by: call frame info\n"
+            }, 
+            {
+              "status": "PROCESS-CRASH", 
+              "text": "application crashed (minidump found)", 
+              "stacktrace": "Thread 0 (crashed)\n 0  nptest.dll!Crash [nptest.cpp:ec809c159ad2 : 85 + 0x3]\n    eip = 0x049e3bce   esp = 0x0012e704   ebp = 0x0012e708   ebx = 0x00000000\n    esi = 0x046b1510   edi = 0x01acf534   eax = 0x00000000   ecx = 0xce29ea67\n    edx = 0x04a82280   efl = 0x00010212\n    Found by: given as instruction pointer in context\n 1  nptest.dll!IntentionalCrash [nptest.cpp:ec809c159ad2 : 93 + 0x4]\n    eip = 0x049e3915   esp = 0x0012e710   ebp = 0x0012e710\n    Found by: call frame info\n 2  nptest.dll!crashPlugin [nptest.cpp:ec809c159ad2 : 2556 + 0x4]\n    eip = 0x049e8478   esp = 0x0012e718   ebp = 0x0012e718\n    Found by: call frame info\n 3  nptest.dll!scriptableInvoke(NPObject *,void *,_NPVariant const *,unsigned int,_NPVariant *) [nptest.cpp:ec809c159ad2 : 1796 + 0x1b]\n    eip = 0x049e66b4   esp = 0x0012e720   ebp = 0x0012e744\n    Found by: call frame info\n 4  xul.dll!mozilla::plugins::PluginScriptableObjectChild::AnswerInvoke(mozilla::plugins::PPluginIdentifierChild *,InfallibleTArray<mozilla::plugins::Variant> const &,mozilla::plugins::Variant *,bool *) [PluginScriptableObjectChild.cpp:ec809c159ad2 : 710 + 0x39]\n    eip = 0x01b0b284   esp = 0x0012e74c   ebp = 0x0012e864\n    Found by: call frame info\n 5  xul.dll!mozilla::plugins::PPluginScriptableObjectChild::OnCallReceived(IPC::Message const &,IPC::Message * &) [PPluginScriptableObjectChild.cpp:ec809c159ad2 : 760 + 0x22]\n    eip = 0x01bee7d9   esp = 0x0012e86c   ebp = 0x0012ecd8\n    Found by: call frame info\n"
+            }
+          ]
+        }
+      ], 
+      "os": "xp", 
+      "revision": "ec809c159ad2"
+    }
+  ], 
+  "testgroup": "reftest", 
+  "buildtype": "debug", 
+  "buildid": "20110415111213", 
+  "builder": "mozilla-central_xp-debug_test-reftest", 
+  "tree": "mozilla-central", 
+  "tessuite_count": 1, 
+  "filename": "reftest-fail-crash.log.gz", 
+  "machine": "talos-r3-xp-019", 
+  "platform": "win32", 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1302891133/firefox-6.0a1.en-US.win32.zip", 
+  "starttime": "1302893477", 
+  "date": "2011-04-15", 
+  "frameworkfailures": null, 
+  "revision": "ec809c159ad2", 
+  "os": "xp", 
+  "id": "1302893477-a7b416f2608c385ec3e1259ef77c9cb75c2525ec", 
+  "logurl": null
+}

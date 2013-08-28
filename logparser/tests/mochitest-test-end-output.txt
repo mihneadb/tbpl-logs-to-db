@@ -1,0 +1,113 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20101027115513", 
+      "suitename": "mochitest-chrome", 
+      "elapsedtime": "304", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --chrome", 
+      "platform": null, 
+      "date": "2010-10-27", 
+      "todo": "113", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed-030", 
+      "failed": "0", 
+      "passed": "13625", 
+      "os": null, 
+      "revision": "fa759e894155"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20101027115513", 
+      "suitename": "mochitest-browser-chrome", 
+      "elapsedtime": "432", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --browser-chrome", 
+      "platform": null, 
+      "date": "2010-10-27", 
+      "todo": "6", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed-030", 
+      "failed": "1", 
+      "passed": "13672", 
+      "failures": [
+        {
+          "test": "chrome://mochitests/content/browser/browser/components/places/tests/browser/browser_forgetthissite_single.js", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "Test timed out"
+            }
+          ], 
+          "duration": "30010"
+        }
+      ], 
+      "os": null, 
+      "revision": "fa759e894155"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20101027115513", 
+      "suitename": "mochitest-a11y", 
+      "elapsedtime": "80", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --a11y", 
+      "platform": null, 
+      "date": "2010-10-27", 
+      "todo": "16", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed-030", 
+      "failed": "0", 
+      "passed": "15050", 
+      "os": null, 
+      "revision": "fa759e894155"
+    }, 
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20101027115513", 
+      "suitename": "mochitest-ipcplugins", 
+      "elapsedtime": "25", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --setpref=dom.ipc.plugins.enabled=false --test-path=modules/plugin/test", 
+      "platform": null, 
+      "date": "2010-10-27", 
+      "todo": "0", 
+      "logurl": null, 
+      "testfailure_count": 0, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-fed-030", 
+      "failed": "0", 
+      "passed": "459", 
+      "os": null, 
+      "revision": "fa759e894155"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20101027115513", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 4, 
+  "filename": "mochitest-test-end.log.gz", 
+  "machine": "talos-r3-fed-030", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-linux/1288205713/firefox-4.0b8pre.en-US.linux-i686.tar.bz2", 
+  "starttime": null, 
+  "date": "2010-10-27", 
+  "frameworkfailures": null, 
+  "revision": "fa759e894155", 
+  "os": null, 
+  "id": "None-8de773d31ea16d5ef976694400c8758a113b8224", 
+  "logurl": null
+}

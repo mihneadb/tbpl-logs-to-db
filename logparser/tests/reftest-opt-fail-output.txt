@@ -1,0 +1,53 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100924003642", 
+      "suitename": "reftest", 
+      "elapsedtime": "382", 
+      "cmdline": "python reftest/runreftest.py --appname=./Minefield.app/Contents/MacOS/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols reftest/tests/layout/reftests/reftest.list", 
+      "platform": null, 
+      "date": "2010-09-24", 
+      "todo": "217", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-snow-038", 
+      "failed": "1", 
+      "passed": "5134", 
+      "failures": [
+        {
+          "test": "reftest/tests/layout/reftests/image/background-image-zoom-1.html", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "image1linenumber": 34892, 
+              "image2linenumber": 34893
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "b82884bf3be7"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100924003642", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "reftest-opt-fail.log.gz", 
+  "machine": "talos-r3-snow-038", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-macosx64/1285313802/firefox-4.0b7pre.en-US.mac64.dmg", 
+  "starttime": null, 
+  "date": "2010-09-24", 
+  "frameworkfailures": null, 
+  "revision": "b82884bf3be7", 
+  "os": null, 
+  "id": "None-f68255260d376a3b5bf764cf93fe16072d879024", 
+  "logurl": null
+}

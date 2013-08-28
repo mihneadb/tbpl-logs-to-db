@@ -1,0 +1,88 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "starttime": null, 
+      "buildid": "20100928085014", 
+      "suitename": "jsreftest", 
+      "elapsedtime": "451", 
+      "cmdline": "python reftest/runreftest.py --appname=firefox/firefox.exe --utility-path=bin --extra-profile-file=bin/plugins --symbols-path=symbols --extra-profile-file=jsreftest/tests/user.js jsreftest/tests/jstests.list", 
+      "platform": null, 
+      "date": "2010-09-28", 
+      "todo": "940", 
+      "logurl": null, 
+      "testfailure_count": 1, 
+      "builder": null, 
+      "tree": null, 
+      "machine": "talos-r3-w7-017", 
+      "failed": "10", 
+      "passed": "54194", 
+      "failures": [
+        {
+          "test": "jsreftest/tests/jsreftest.html?test=ecma_3/RegExp/15.10.6.2-2.js", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 6 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 7 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 8 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 9 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 10 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 11 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 12 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 13 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 14 of test -"
+            }, 
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "Section 15 of test -"
+            }
+          ]
+        }
+      ], 
+      "os": null, 
+      "revision": "99aa53d645ca"
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100928085014", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "jsreftest-fail.log.gz", 
+  "machine": "talos-r3-w7-017", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32/1285689014/firefox-4.0b7pre.en-US.win32.zip", 
+  "starttime": null, 
+  "date": "2010-09-28", 
+  "frameworkfailures": null, 
+  "revision": "99aa53d645ca", 
+  "os": null, 
+  "id": "None-8f5e1b0bbd34a0ec37b9a46ee87b6d743aa4f9de", 
+  "logurl": null
+}

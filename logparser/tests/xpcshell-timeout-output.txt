@@ -1,0 +1,49 @@
+{
+  "testsuites": [
+    {
+      "machine": "mw32-ix-slave21", 
+      "testfailure_count": 1, 
+      "buildid": "20100929200021", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "xpcshell", 
+      "elapsedtime": "2358", 
+      "cmdline": "bash -c if [ ! -d firefox/plugins ]; then mkdir firefox/plugins; fi && cp bin/xpcshell.exe firefox && cp -R bin/components/* firefox/components/ && cp -R bin/plugins/* firefox/plugins/ && python -u xpcshell/runxpcshelltests.py", 
+      "buildtype": "opt", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-29", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-TIMEOUT", 
+              "text": "buildbot.slave.commands.TimeoutError: command timed out: 1200 seconds without output"
+            }
+          ]
+        }
+      ], 
+      "revision": "d2b9dae424f6", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100929200021", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "xpcshell-timeout.log.gz", 
+  "machine": "mw32-ix-slave21", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-win32-debug/1285815621/firefox-4.0b7pre.en-US.win32.zip", 
+  "starttime": null, 
+  "date": "2010-09-29", 
+  "frameworkfailures": null, 
+  "revision": "d2b9dae424f6", 
+  "os": null, 
+  "id": "None-d27afe521a6521d393ed4443ecd9e324553986d9", 
+  "logurl": null
+}

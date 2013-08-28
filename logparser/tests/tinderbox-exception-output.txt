@@ -1,0 +1,50 @@
+{
+  "testsuites": [
+    {
+      "buildtype": "opt", 
+      "testfailure_count": 1, 
+      "buildid": "20100923160149", 
+      "tree": null, 
+      "builder": null, 
+      "suitename": "mochitest-plain-4", 
+      "machine": "talos-r3-fed-013", 
+      "cmdline": "python mochitest/runtests.py --appname=firefox/firefox-bin --utility-path=bin --extra-profile-file=bin/plugins --certificate-path=certs --autorun --close-when-done --console-level=INFO --symbols-path=symbols --total-chunks=5 --this-chunk=4 --chunk-by-dir=4", 
+      "platform": null, 
+      "starttime": null, 
+      "date": "2010-09-23", 
+      "failures": [
+        {
+          "test": "Shutdown", 
+          "failures": [
+            {
+              "status": "TEST-UNEXPECTED-FAIL", 
+              "text": "remoteFailed: [Failure instance: Traceback (failure with no frames): <class 'twisted.internet.error.ConnectionLost'>: Connection to the other side was lost in a non-clean fashion."
+            }
+          ]
+        }
+      ], 
+      "revision": "626d22af7eff", 
+      "os": null, 
+      "logurl": null
+    }
+  ], 
+  "testgroup": null, 
+  "buildtype": "opt", 
+  "buildid": "20100923160149", 
+  "builder": null, 
+  "tree": null, 
+  "tessuite_count": 1, 
+  "filename": "tinderbox-exception.log.gz", 
+  "machine": "talos-r3-fed-013", 
+  "platform": null, 
+  "buildurl": "http://stage.mozilla.org/pub/mozilla.org/firefox/tinderbox-builds/mozilla-central-linux-debug/1285282909/firefox-4.0b7pre.en-US.linux-i686.tar.bz2", 
+  "starttime": null, 
+  "date": "2010-09-23", 
+  "frameworkfailures": [
+    "remoteFailed: [Failure instance: Traceback: <type 'exceptions.AttributeError'>: 'NoneType' object has no attribute 'callRemote'"
+  ], 
+  "revision": "626d22af7eff", 
+  "os": null, 
+  "id": "None-13ec60ac7bb00947d80360a46c7430ffc1e16732", 
+  "logurl": null
+}
