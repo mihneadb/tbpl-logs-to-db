@@ -77,7 +77,11 @@ if __name__ == '__main__':
             filepath = os.path.join(root, filename)
             parser = parsers[t](includePass=True)
 
-            result = parse_file(filepath, parser)[1]
+            result = parse_file(filepath, parser)
+            if not result:
+                continue
+            result = result[1]
+
             date = datetime.fromtimestamp(result['starttime'])
 
             save_to_db(result['passes'], t, date, True)
