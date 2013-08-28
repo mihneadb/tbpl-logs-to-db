@@ -53,7 +53,6 @@ class TestData(BaseModel):
     testfile = CharField(index=True)
     passed = BooleanField()
     date = DateTimeField()
-    duration = IntegerField()
 
 TestData.create_table(True)
 
@@ -64,7 +63,6 @@ def save_to_db(collection, kind, date, passed=True):
             testfile=test['test'],
             passed=passed,
             date=date,
-            duration=int(test['duration'])
         )
 
 
