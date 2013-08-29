@@ -81,11 +81,11 @@ if __name__ == '__main__':
 
     for root, dirs, files in os.walk(logs_dir, topdown=False):
         for filename in files:
+            filepath = os.path.join(root, filename)
             t = infer_type(filename)
             if not t:
                 os.unlink(filepath)
                 continue
-            filepath = os.path.join(root, filename)
             parser = parsers[t](includePass=True)
 
             result = parse_file(filepath, parser)
