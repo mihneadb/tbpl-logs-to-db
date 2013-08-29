@@ -21,7 +21,6 @@ parsers = {
 }
 
 def parse_file(filepath, parser):
-    print "Parsing", filepath
     try:
         with GzipFile(filepath) as fp:
             return parser.parse(fp)
@@ -67,9 +66,20 @@ def save_to_db(collection, kind, slavetype, date, passed=True):
             date=date,
         )
 
+def count_files(root):
+    count = 0
+    for root, dirs, files in os.walk(root):
+        count += len(files)
+    return count
+
 
 if __name__ == '__main__':
-    for root, dirs, files in os.walk(sys.argv[1]):
+    logs_dir = sys.argv[1]
+
+    count = count_files(logs_dir)
+    current = 0
+
+    for root, dirs, files in os.walk(logs_dir):
         for filename in files:
             t = infer_type(filename)
             if not t:
@@ -86,5 +96,8 @@ if __name__ == '__main__':
 
             save_to_db(result['passes'], t, result['slavetype'], date, True)
             save_to_db(result['failures'], t, result['slavetype'], date, False)
-    print "Done."
+
+            current += 1
+            sys.stdout.write("\tDone: %d/%d\r" % (current, count))
+            sys.stdout.flush()
 
