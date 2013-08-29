@@ -48,9 +48,9 @@ class BaseModel(Model):
         database = db
 
 class TestData(BaseModel):
-    kind = CharField(index=True)
-    slavetype = CharField(index=True)
-    testfile = CharField(index=True)
+    kind = CharField()
+    slavetype = CharField()
+    testfile = CharField()
     passed = BooleanField()
     date = DateTimeField()
 
@@ -58,7 +58,7 @@ TestData.create_table(True)
 
 def save_to_db(collection, kind, slavetype, date, passed=True):
     for test in collection:
-        data = TestData.get_or_create(
+        data = TestData.create(
             kind=kind,
             slavetype=slavetype,
             testfile=test['test'],
