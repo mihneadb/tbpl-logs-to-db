@@ -58,7 +58,7 @@ TestData.create_table(True)
 
 def save_to_db(collection, kind, slavetype, date, passed=True):
     for test in collection:
-        data = TestData.get_or_create(
+        data = TestData.create(
             kind=kind,
             slavetype=slavetype,
             testfile=test['test'],
