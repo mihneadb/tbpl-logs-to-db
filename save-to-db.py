@@ -39,7 +39,7 @@ def infer_type(filename):
 
 #### db
 
-db = PostgresqlDatabase('logs')
+db = PostgresqlDatabase('logs', autocommit=False)
 db.get_conn().set_client_encoding('UTF8')
 
 class BaseModel(Model):
@@ -96,8 +96,13 @@ if __name__ == '__main__':
 
             date = datetime.fromtimestamp(result['starttime'])
 
-            save_to_db(result['passes'], t, result['slavetype'], date, True)
-            save_to_db(result['failures'], t, result['slavetype'], date, False)
+            try:
+                save_to_db(result['passes'], t, result['slavetype'], date, True)
+                save_to_db(result['failures'], t, result['slavetype'], date, False)
+            except:
+                db.rollback()
+            else:
+                db.commit()
 
             os.unlink(filepath)
 
