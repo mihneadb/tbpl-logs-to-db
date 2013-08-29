@@ -50,16 +50,18 @@ class BaseModel(Model):
 
 class TestData(BaseModel):
     kind = CharField(index=True)
+    slavetype = CharField(index=True)
     testfile = CharField(index=True)
     passed = BooleanField()
     date = DateTimeField()
 
 TestData.create_table(True)
 
-def save_to_db(collection, kind, date, passed=True):
+def save_to_db(collection, kind, slavetype, date, passed=True):
     for test in collection:
         data = TestData.get_or_create(
             kind=kind,
+            slavetype=slavetype,
             testfile=test['test'],
             passed=passed,
             date=date,
@@ -82,7 +84,7 @@ if __name__ == '__main__':
 
             date = datetime.fromtimestamp(result['starttime'])
 
-            save_to_db(result['passes'], t, date, True)
-            save_to_db(result['failures'], t, date, False)
+            save_to_db(result['passes'], t, result['slavetype'], date, True)
+            save_to_db(result['failures'], t, result['slavetype'], date, False)
     print "Done."
 

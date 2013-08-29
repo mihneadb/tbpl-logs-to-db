@@ -65,6 +65,12 @@ class TestSuiteLogParser(object):
     self.starttime = float(line.split(": ")[1])
     fp.seek(0)
 
+  def getSlaveType(self, fp):
+    line = fp.readline().strip()
+    line = line.split('mozilla-inbound_')[1]
+    self.slavetype = line[:line.index('_test')]
+    fp.seek(0)
+
   def normalizeTestName(self, test):
     """Normalize the test name"""
 
@@ -154,6 +160,7 @@ class TestSuiteLogParser(object):
     result = {}
 
     result['starttime'] = self.starttime
+    result['slavetype'] = self.slavetype
 
     result.update({ 'passes': self.testpasses })
 
@@ -193,6 +200,7 @@ class TestSuiteLogParser(object):
     processingStackTrace = False
     stackTrace = ""
 
+    self.getSlaveType(fp)
     self.getStartTime(fp)
 
     #for line in fp:
