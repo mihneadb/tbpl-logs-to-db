@@ -79,7 +79,7 @@ if __name__ == '__main__':
     count = count_files(logs_dir)
     current = 0
 
-    for root, dirs, files in os.walk(logs_dir):
+    for root, dirs, files in os.walk(logs_dir, topdown=False):
         for filename in files:
             t = infer_type(filename)
             if not t:
@@ -97,7 +97,10 @@ if __name__ == '__main__':
             save_to_db(result['passes'], t, result['slavetype'], date, True)
             save_to_db(result['failures'], t, result['slavetype'], date, False)
 
+            os.unlink(filepath)
+
             current += 1
             sys.stdout.write("\tDone: %d/%d\r" % (current, count))
             sys.stdout.flush()
+        os.rmdir(root)
 
