@@ -83,12 +83,14 @@ if __name__ == '__main__':
         for filename in files:
             t = infer_type(filename)
             if not t:
+                os.unlink(filepath)
                 continue
             filepath = os.path.join(root, filename)
             parser = parsers[t](includePass=True)
 
             result = parse_file(filepath, parser)
             if not result:
+                os.unlink(filepath)
                 continue
             result = result[1]
 
